@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ENRICO GUNAWAN-CONTACTS</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body><a href="index.html">
+		<header>
+		<p>エンリコグナワン<br>ENRICO GUNAWAN</p>
+	</header>
+	</a>
+	
+	<main>
+		<article class="topbutton">
+			<li><a href="profile.html">プロファイル</a></li>
+			<li><a href="skill.html">スキル</a></li>
+			<li><a href="project.html">作品</a></li>
+			<li><a href="contacts.html">連絡先</a></li>
+		</article>
+		
+		<section class="hidden" id="hidden">
+			<article class="hiddeninfo">
+				<p class="hiddentitle">Hidden</p>
+				<p class="hiddendescription">
+					プラットフォーム：Visual Studio<br>
+					使用言語：C<br>
+					チーム人数：プログラマー１人、プランナー１人
+				</p>
+			</article>
+			<img src="スクリーンショット (4).png" alt="">
+		</section>
+		<div class="hiddentext">
+			<p style="text-indent: 100px;">Hiddenは、真ん中にある星を掴んで、出口から逃げるというパズルゲームです。四角、また四角から出た玉を避けて、確定されている時間内で完成しなければなりません。もっと早いほどスコアも多くなります。</p><p class="right-show">担当された部分：プログラミングの全て</p>
+		</div>
+		<button type="button" class="hiddenbutton" id = "hiddenbutton" value= "1" onClick="showHiddenText();">もっと見る</button>
+		
+		<script>
+			function showHiddenText(){
+				if($(".hiddentext").is(":hidden")){
+					document.getElementById("hiddenbutton").innerText = "閉じる";
+					$(".hiddentext").slideDown(1000);
+				}
+				else{
+					document.getElementById('hiddenbutton').innerText = "もっと見る";
+					$(".hiddentext").slideUp(1000);
+				}
+			}
+		</script>
+
+		<hr color="white">
+		
+		<section class="rainlily" id="rainlily">
+			<img src="Screen Shot 2022-01-07 at 16.51.19.png" alt="">
+				<article class="rainlilyinfo">
+					<p class="rainlilytitle">Rain Lily</p>
+					<p class="rainlilydescription">
+						プラットフォーム：Unity<br>
+						使用言語：C#<br>
+						チーム人数：プログラマー2人、プランナー3人、<br>ゲームグラフィック８人
+					</p>
+				</article>
+		</section>
+		<div class="rainlilytext">
+			<p style="text-indent: 100px;">乙女ゲームのRain Lilyは、Unityを使って遊べる状態になりました。主人公は、気になる男性の親愛度を上げて見て、そのルートをクリアしてみるというゲームです。ゲームの中には、三つのミニゲームがあって、絶対退屈させないようになります。女性はストーリー、シーン、と色々なことをゆっくり楽しめるゲームです。</p><p class="right-show">担当された部分：ノベルの部分、神経衰弱（ミニゲームの一つ）、ホーム画面のプログラミング</p>
+		</div>
+		<button type="button" class="rainlilybutton" id = "rainlilybutton" value= "1" onClick="showRainlilyText();">もっと見る</button>
+		
+		<script>
+			function showRainlilyText(){
+				if($(".rainlilytext").is(":hidden")){
+					document.getElementById("rainlilybutton").innerText = "閉じる";
+					$(".rainlilytext").slideDown(1000);
+				}
+				else{
+					document.getElementById('rainlilybutton').innerText = "もっと見る";
+					$(".rainlilytext").slideUp(1000);
+				}
+			}
+		</script>
+		
+		<hr color="white">
+		
+		<section class="ppap" id="ppap">
+			<article class="ppapinfo">
+				<p class="ppaptitle">Get to Treasure Key</p>
+				<p class="ppapdescription">
+					プラットフォーム：Visual Studio<br>
+					使用言語：C++<br>
+					チーム人数：プログラマー3人
+				</p>
+			</article>
+			<img src="DxLib 2022_01_14 15_57_45.png" alt="">
+		</section>
+		<div class="labyrinthtext">
+			<p style="text-indent: 100px;">このパズルゲームは、頭を使って最も良い道を選択するゲームです。迷路ゲームで、宝石を破壊して、鍵まで道を作ります。しかし、違う宝石もあり、宝石の硬さも違います。硬いほど使っているエナジーが多くなって、エナジーが無くなったらゲームオーバー。もっと早いほどスコアももっと高くなる。</p><p class="right-show">担当された部分：プレイヤーの動き、プレイヤーの当たり判定のプログラミング</p>
+		</div>
+		<button type="button" class="labyrinthbutton" id = "labyrinthbutton" value= "1" onClick="showLabyrinthText();">もっと見る</button>
+		
+		<script>
+			function showLabyrinthText(){
+				if($(".labyrinthtext").is(":hidden")){
+					document.getElementById("labyrinthbutton").innerText = "閉じる";
+					$(".labyrinthtext").slideDown(1000);
+				}
+				else{
+					document.getElementById('labyrinthbutton').innerText = "もっと見る";
+					$(".labyrinthtext").slideUp(1000);
+				}
+			}
+		</script>
+		
+	<hr color="white">
+</main>
+
+	
+<footer>
+		<article class="dialogue">
+			<section class="face">
+				<img src="Question-Mark-Face.jpg" alt="">
+			</section>
+			<section class="textbox">
+				<p id = "answer">僕が作った作品です！</p>
+							
+			</section>
+		</article>
+	</footer>
+</body>
+</html>

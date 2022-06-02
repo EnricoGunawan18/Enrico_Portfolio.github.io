@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ENRICO GUNAWAN-HOME</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body><a href="index.html">
+	<header>
+		<p>エンリコグナワン<br>ENRICO GUNAWAN</p>
+	</header>
+	</a>
+	
+	<main>
+		<article class="topbutton">
+			<li><a href="profile.html">プロファイル</a></li>
+			<li><a href="skill.html">スキル</a></li>
+			<li><a href="project.html">作品</a></li>
+			<li><a href="contacts.html">連絡先</a></li>		</article>
+		<article class="mainscreen">
+			<section class="askme">
+				<li class="circle"><p>ASK ME!</p></li>
+				<li><button type="button" value= "1" onClick="changeText(this.value);">長所は何ですか？</button></li>
+				<li><button type="button" value= "2" onClick="changeText(this.value);">短所は何ですか？</button></li>
+				<li><button type="button" value= "3" onClick="changeText(this.value);">将来でやりたい事は何ですか？</button></li>
+				<li><button type="button" value= "4" onClick="changeText(this.value);">趣味は何ですか？</button></li>
+			</section>
+			<section class="gameshow">
+				<a href="project.html#hidden"><img class="imageSlide" src="スクリーンショット (2).png" alt=""></a>
+				<a href="project.html#rainlily"><img class="imageSlide" src="Screen Shot 2022-01-07 at 16.49.44.png" alt=""></a>
+				<a href="project.html#ppap"><img class="imageSlide" src="DxLib 2022_01_14 15_56_30.png" alt=""></a>
+				
+				<div class="bottomSlide">
+					<button class="leftButton" onclick="plusDivs(-1)">&#10094;</button>
+					<p class="textSlide">Hidden</p>
+					<p class="textSlide">Rain Lily</p>
+					<p class="textSlide">Get to Treasure Key</p>
+					<button class="rightButton" onclick="plusDivs(+1)">&#10095;</button>
+				</div>
+				
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+					
+					function plusDivs(n) {
+						showDivs(slideIndex += n);
+					}
+					
+					function showDivs(n) {
+						var i;
+						var x = document.getElementsByClassName("imageSlide");
+						var y = document.getElementsByClassName("textSlide");
+						if (n > x.length) {slideIndex = 1}
+						if (n < 1) {slideIndex = x.length} ;
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";
+							y[i].style.display = "none";
+						}
+						x[slideIndex-1].style.display = "block";
+						y[slideIndex-1].style.display = "block";
+					}				
+				</script>
+			</section>
+			<section class="scream">
+				<p>僕の<br>作品です!!!</p>
+			</section>
+		</article>
+	</main>
+	
+	<footer>
+		<article class="dialogue">
+			<section class="face">
+				<img src="Question-Mark-Face.jpg" alt="">
+			</section>
+			<section class="textbox">
+				<p id = "answer">初めまして！左側の質問を押してみてください！</p>
+				
+				<script>								
+					function changeText(value){						
+						if(value == "1"){document.getElementById('answer').innerHTML = "勉強が早くて、よく頑張っているタイプの人です。性格もなかなか良いと自分が思います。";
+						}
+						if(value == "2"){document.getElementById('answer').innerHTML = "経験不足でまだ分からないことが多いです。";
+						}
+						if(value == "3"){document.getElementById('answer').innerHTML = "お金が溜まって、時間もあれば家族と旅行したいです。";
+						}
+						if(value == "4"){document.getElementById('answer').innerHTML = "ゲームをすること、音楽を聴くことが好きです。最近、Twitch でライブ配信もはまっています。";
+						}
+					}
+				</script>
+				
+			</section>
+		</article>
+	</footer>	
+</body>
+</html>

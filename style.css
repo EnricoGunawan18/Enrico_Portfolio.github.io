@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a{
+	text-decoration: none;
+}
+
+html{
+	min-width: 1600px;
+	scroll-behavior: smooth;
+}
+
+header{
+	width: 100%;
+	padding-top: 1px;
+	background-color: darkgrey;
+	border-bottom: 1px solid black;
+}
+
+header p{
+	color: black;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	background-color: black;
+	min-height: 100vh;
+}
+
+.topbutton{
+	padding: 0;
+	width: 100%;
+}
+
+.topbutton li{
+	display: table-cell;
+	list-style: none;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 1%;
+	text-align: center;
+	border: 1px solid black;
+	background-color: lightgray;
+	color: black;
+}
+
+.topbutton li a{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	display: block;
+	color: black;
+	font:bold;
+	text-decoration: none;
+}
+
+.topbutton li:hover{
+	background-color: darkgray;
+}
+
+.circle{
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: firebrick;
+	font-size: 50px;
+	color: white;
+}
+
+.mainscreen{
+	display: flex;
+	justify-content: space-between;
+}
+
+.askme{
+	margin-top: 50px;
+	width: 70%;
+}
+
+.askme li{
+	width: 50%;
+	text-align: center;
+	list-style: none;
+}
+
+.gameshow{
+	margin-top: 100px;
+	margin-left: -500px;
+}
+
+.askme button{
+	background-color: brown;
+	border: 1px solid black;
+	color: white;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.mainscreen button:active{
+	background-color: darkred;
+}
+
+.gameshow img{
+	width: 600px;
+}
+
+.bottomSlide{
+	display: flex;
+	width: 100%;
+}
+
+.rightButton{
+	font-size: 20px;
+	color: white;
+	background-color: brown;
+	border: 1px solid black;
+	width: 20%;
+}
+
+.textSlide{
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.leftButton{
+	font-size: 20px;
+	color: white;
+	background-color: brown;
+	border: 1px solid black;
+	width: 20%;
+}
+
+.scream{
+	padding-top: 100px;
+	width: 30%;
+	text-align: center;
+}
+
+.scream p{
+	font-size: 50px;
+	color: lightgray;
+}
+
+.dialogue{
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	margin-right: 20px;
+}
+
+.face img{
+	margin-right: 40px;
+	margin-left: 20px;
+	width: 30%;
+}
+
+
+.textbox{
+	width: 100%;
+	margin-left: -650px;
+	background-image: url("bubble.png");
+	background-size: 100% 150px;
+	background-position: top;
+}
+
+.textbox p{
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 60px;
+	font-size: 30px;
+}
+
+footer{
+	margin-top: auto;
+	width: 100%;
+}
+
+
+.profile{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	display: flex;
+}
+
+.profile section{
+	width: 100%;
+}
+
+.profileface{
+	margin-left: 100px;
+}
+
+.profileface img{
+	width: 50%;
+}
+
+.data{
+	color: black;
+	margin-left: -300px;
+	display: flex;
+	font-size: 32px;
+}
+
+.data table{
+	background-color: darkgray;
+}
+
+.prof2{
+	margin-left: 25px;
+}
+
+.data ul{
+	margin: 0;
+	width: 90%;
+	list-style: none;
+	border: 1px solid black;
+}
+
+
+
+
+.skills table{
+	background-color: darkgray;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	width: 80%;
+}
+
+.skills td{
+	position: relative;
+	width: 50%;
+}
+
+.skills progress::-moz-progress-bar{
+	background: red;
+}
+
+.stat{
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	position: absolute;
+	background: darkgray;
+}
+
+.contact{
+	display: block;
+	text-align: center;
+	background-color: darkgray;
+	width: 20%;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.contact p{
+	font-weight: bold;
+}
+
+.contactbutton {
+	background-color: brown;
+	border: 1px solid black;
+	color: white;
+	width: 50%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+
+.contactbutton:hover{
+	color: black;
+	background-color: darkred;
+}
+
+.hidden{
+	padding: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.hiddeninfo{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+.hidden img{
+	padding-top: 20px;
+	width: 40%;
+}
+
+.hiddentitle{
+	padding-top: 20px;
+	font-size: 60px;
+
+}
+.hiddendescription{
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+}
+
+.hiddentext{
+	margin: auto;
+	width: 65%;
+	display: none;
+	color: white;
+	text-align: left;
+	font-size: 30px;
+}
+
+.hiddenbutton{
+	align-content: center;
+	width: 100%;
+}
+
+.hiddenbutton button{
+	width: 20%;
+	background-color: darkgray;
+	font-size: 20px;
+}
+
+.right-show{
+	color: white;
+	text-align: right;
+}
+
+.rainlily{
+	padding: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.rainlilyinfo{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+.rainlily img{
+	padding-top: 40px;
+	width: 40%;
+}
+
+.rainlilytitle{
+	padding-top: 20px;
+	font-size: 60px;
+
+}
+.rainlilydescription{
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+}
+
+.rainlilytext{
+	margin: auto;
+	width: 65%;
+	display: none;
+	color: white;
+	text-align: left;
+	font-size: 30px;
+}
+
+.rainlilybutton{
+	align-content: center;
+	width: 100%;
+}
+
+.rainlilybutton button{
+	width: 20%;
+	background-color: darkgray;
+	font-size: 20px;
+}
+
+.ppap{
+	padding: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ppapinfo{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+.ppap img{
+	padding-top: 20px;
+	width: 40%;
+}
+
+.ppaptitle{
+	padding-top: 20px;
+	font-size: 60px;
+
+}
+.ppapdescription{
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+}
+
+.labyrinthtext{
+	margin: auto;
+	width: 65%;
+	display: none;
+	color: white;
+	text-align: left;
+	font-size: 30px;
+}
+
+.labyrinthbutton{
+	align-content: center;
+	width: 100%;
+}
+
+.labyrinthbutton button{
+	width: 20%;
+	background-color: darkgray;
+	font-size: 20px;
+}
